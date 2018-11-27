@@ -1,0 +1,33 @@
+This file describes the input, output and optimization technique for the MAX_CUT and Corelation Clustering problem.
+The sourse file for the optimiations are
+1. Max Cut problem : 				max_cut.py
+2. Cortealtion Clustering Problem:	corelartion_clustering.py
+
+For both the code system need python  and numpy and scipy.optimize ("SLSQP" optimization)  
+______________________________________________________________
+1.MAX CUT:
+
+		Input : The number of the nodes in the graph is input to the graph . The command line 
+				python max_cut.py n     # where n:= the number of nodes in the graph
+
+				W: the weight matrix W is genrated randomly in [0,1]
+
+		Output: As output the program prints the cut U,V and the cut value.
+		
+For the optimization purspose, we have used "SLSQP". 
+________________________________________________________________				 
+2. CORELATION CLUSTERING:
+		
+		Input :The number of the nodes in the graph is input to the graph . The command line 
+				python corelation_clustering.py n     # where n:= the number of nodes in the graph
+
+				W_p,W_n: the two weight matrix (corresponds to the inter and intra cluster edge weight) is genrated randomly in [0,1]
+
+		Output: As output it prints the objective value and the 4 cluster it genrates R1,R2,R3,R4.
+
+
+Notes:
+
+The optimization is very slow. It does not scale with n (number of vertices). 
+
+
